@@ -1,0 +1,22 @@
+{
+  "name": "aggregateos",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "npm@10.9.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "db:generate": "turbo db:generate",
+    "db:migrate": "turbo db:migrate",
+    "db:push": "turbo db:push",
+    "db:studio": "npm run db:studio --workspace=@aggregateos/db"
+  },
+  "devDependencies": {
+    "turbo": "^2"
+  }
+}

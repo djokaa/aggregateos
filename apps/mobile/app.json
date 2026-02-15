@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "AggregateOS Driver",
+    "slug": "aggregateos-driver",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "aggregateos",
+    "splash": {
+      "backgroundColor": "#18181b"
+    },
+    "ios": {
+      "bundleIdentifier": "com.aggregateos.driver",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "AggregateOS needs your location to track deliveries and optimize routes.",
+        "NSLocationAlwaysUsageDescription": "AggregateOS needs background location access for delivery tracking.",
+        "NSCameraUsageDescription": "AggregateOS needs camera access to photograph delivery tickets."
+      }
+    },
+    "android": {
+      "package": "com.aggregateos.driver",
+      "adaptiveIcon": {
+        "backgroundColor": "#18181b"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-camera",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "AggregateOS needs your location to track deliveries."
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@aggregateos/db",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:seed": "npx tsx ../../tooling/scripts/seed.ts"
+  },
+  "dependencies": {
+    "@aggregateos/shared": "*",
+    "drizzle-orm": "^0.39",
+    "postgres": "^3.4.8",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16",
+    "drizzle-kit": "^0.30",
+    "tsx": "^4.21.0",
+    "typescript": "^5"
+  }
+}

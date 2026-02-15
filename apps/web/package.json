@@ -1,0 +1,46 @@
+{
+  "name": "@aggregateos/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@aggregateos/api": "*",
+    "@aggregateos/db": "*",
+    "@aggregateos/shared": "*",
+    "@aggregateos/ui": "*",
+    "@clerk/nextjs": "^6",
+    "@tanstack/react-query": "^5",
+    "@trpc/client": "^11",
+    "@trpc/next": "^11",
+    "@trpc/react-query": "^11",
+    "@trpc/server": "^11",
+    "class-variance-authority": "^0.7",
+    "clsx": "^2",
+    "lucide-react": "^0.474",
+    "next": "16.1.6",
+    "postgres": "^3.4.8",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "recharts": "^2.15.4",
+    "server-only": "^0.0.1",
+    "sonner": "^2",
+    "superjson": "^2",
+    "tailwind-merge": "^3",
+    "zod": "^3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
