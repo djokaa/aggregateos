@@ -74,16 +74,19 @@ export const __ui_safelist = [
   // ---------------------------------------------------------------------------
   // select.tsx
   // ---------------------------------------------------------------------------
-  "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-zinc-200 bg-transparent px-3 py-2 text-sm shadow-sm",
-  "ring-offset-white placeholder:text-zinc-500 focus:outline-none focus:ring-1 focus:ring-zinc-400",
+  // trigger
+  "flex h-9 w-full items-center justify-between gap-2 rounded-md border border-zinc-200 bg-white px-3 py-2 text-sm shadow-sm",
+  "ring-offset-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-400 focus:ring-offset-1",
   "disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
-  "data-[state=open]:bg-zinc-100 data-[state=open]:text-zinc-500",
-  "h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]",
+  // content
+  "relative z-50 max-h-96 min-w-[8rem] overflow-hidden rounded-md border border-zinc-200 bg-white text-zinc-950 shadow-md",
   "data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1",
   "data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1",
-  "max-h-96 overflow-auto p-1",
-  "relative flex w-full cursor-default items-center rounded-sm py-1.5 pl-2 pr-8 text-sm outline-none",
-  "data-[state=selected]:bg-zinc-100",
+  // viewport
+  "bg-white p-1 h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]",
+  // item
+  "relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-2 pr-8 text-sm outline-none",
+  "focus:bg-zinc-100 focus:text-zinc-900 data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
 
   // ---------------------------------------------------------------------------
   // tabs.tsx
